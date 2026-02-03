@@ -3,7 +3,7 @@ import tensorflow as tf
 
 class ModelEvaluation:
     def evaluate(self):
-        model = tf.keras.models.load_model("artifacts/model/drowsiness_mdoel.keras")
+        model = tf.keras.models.load_model("artifacts/model/driver_drowsiness_model.keras")
 
         X_val = np.load("artifacts/data_split/X_val.npy")
         y_val = np.load("artifacts/data_split/y_val.npy")
